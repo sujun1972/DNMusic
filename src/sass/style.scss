@@ -1,0 +1,174 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";// Import Zen Grids with this statement.
+
+body {
+  padding-top: 68px;
+  background-color: #000;
+  color: #fff;
+  font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
+  font-size: 14px;
+}
+
+a {
+
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.navbar {
+  height: 68px;
+  background-color: rgba(#004667, .9);
+  color: #fff;
+}
+
+ul.navbar-nav {
+  padding-left: 80px;
+}
+
+.navbar a.active {
+  color: #fff;
+}
+
+.navbar a {
+  color: #aaa;
+}
+
+.navbar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-links {
+  min-width: 100px;
+
+}
+
+.jumb {
+  padding: 15px;
+  margin-bottom: 30px;
+  background: url("../img/jumbotron.jpg") no-repeat;
+  min-height: 1120px;
+}
+
+.poster {
+  margin-bottom: 140px;
+}
+
+.slogan {
+  margin-top: 120px;
+  width: 660px;
+}
+
+.slogan img {
+  width: 100%;
+}
+
+.s-logo {
+  width: 320px;
+  display: table;
+  margin: 30px auto 110px;
+}
+
+.s-logo img {
+  width: 100%;
+}
+
+.download {
+  padding: 10px 88px 12px;
+  background-color: rgba(#105373, .75);
+  border: 2px solid rgba(#fff, .75);;
+  border-radius: 30px;
+  color: #fff !important;
+}
+
+.download:hover {
+  background-color: rgba(#105373, .5);
+  border: 2px solid rgba(#fff, .5);
+  color: #fff;
+}
+
+.ops {
+  background-color: rgba(#041118, .63);
+  position: relative;
+}
+
+.ops .row {
+  padding: 12px 0 24px;
+}
+
+.ops .row-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 58px;
+  background-color: rgba(#041118, .63);
+  width: 100%;
+}
+
+.image-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.shadowfilter {
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.8));
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.shadowfilter:hover {
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
+
+.group {
+  padding: 120px 0 80px 0;
+}
+
+.group-2 {
+  margin-bottom: 40px;
+}
+
+.group-2 {
+  margin-bottom: 140px;
+}
+
+.group-3 {
+  margin-bottom: 140px;
+}
+
+.g1-txt {
+  height: 330px;
+}
+
+.g1-img {
+  height: 580px;
+  margin-left: -220px;
+  margin-top: -130px;
+}
+
+.g2-txt {
+  height: 330px;
+  margin-left: 65px;
+}
+
+.g2-img {
+  height: 380px;
+  margin-left: -180px;
+  margin-top: -10px;
+}
+
+.g3-txt {
+  height: 330px;
+}
+
+.g3-img {
+  height: 580px;
+  margin-left: -220px;
+  margin-top: -130px;
+}
+
+footer {
+  padding: 15px 0;
+  color: #aaa;
+}
