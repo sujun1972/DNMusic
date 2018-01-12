@@ -1,0 +1,40 @@
+//- page downloads.pug
+
+extends layout.pug
+
+block head
+    title 下载软件 | 多瑙音乐
+
+block content
+    div.content
+        div.container
+                div.row.group
+                    div.col-4.text-center
+                        img(src="../img/desktop-words.png")
+                    div.col-4.text-center
+                        img(src="../img/android-words.png")
+                    div.col-4.text-center
+                        img(src="../img/iphone-words.png")
+
+                div.row.mb-4
+                    div.col-4.text-center
+                        img(src="../img/windows-client.png")
+                    div.col-4.text-center
+                        img(src="../img/android-client.png")
+                    div.col-4.text-center
+                        img(src="../img/ios-client.png")
+
+        div.row.download-links
+            div.container
+                div.row
+                    div.col-4.text-center
+                        a(href="#")
+                            img.shadowfilter(src="../img/download-button.png")
+                    div.col-4.text-center
+                        a.mr-4(href="#")
+                            img.shadowfilter(src="../img/download-button.png")
+                        img(src="../img/android-qrcode.png")
+                    div.col-4.text-center
+                        a.mr-4(href="#")
+                            img.shadowfilter(src="../img/download-button.png")
+                        img(src="../img/ios-qrcode.png")

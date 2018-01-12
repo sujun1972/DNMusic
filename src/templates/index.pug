@@ -1,78 +1,51 @@
-block basetag
-    -var base = '.'
+//- page index.pug
 
-doctype html
+extends layout.pug
 
-html(lang='zh-hans')
-    head
-        base(href='#{base}')
-        title 多瑙音乐 - 欢迎
-        link(rel='stylesheet', href='../css/style.css')
-
-    body
-        div.jumb
-            nav.navbar.navbar-toggleable-md.fixed-top
-                div.container
-                    a(href="./index.html").logo
-                        img.shadowfilter(src="../img/logo.png")
-                    div.collapse.navbar-collapse
-                        ul.navbar-nav.mr-auto
-                            li.nav-item
-                                a(href="./index.html").active.nav-link  首页
-                            li.nav-item
-                                a(href="#").nav-link  下载客户端
-                            li.nav-item
-                                a(href="#").nav-link  充值
-                    div.user-links
-                        a(href="#") 注册 / 登录
-            div.container.poster
+block content
+    div.jumb
+        div.container.poster
+            div.row
+                div.col-8
+                    div.slogan
+                        img(src="../img/slogan.png")
+                div.col-4.text-center
+                    div.s-logo
+                        img(src="../img/shining-logo.png")
+                    a.shadowfilter(href="./downloads.html").download.big-button 下载客户端
+        div.ops
+            div.row-header
+            div.container
                 div.row
-                    div.col-8
-                        div.slogan
-                            img(src="../img/slogan.png")
                     div.col-4.text-center
-                        div.s-logo
-                            img(src="../img/shining-logo.png")
-                        a.shadowfilter(href="#").download 下载客户端
-            div.ops
-                div.row-header
-                div.container
-                    div.row
-                        div.col-4.text-center
-                            a(href="#")
-                                img.shadowfilter(src="../img/windows.png")
-                        div.col-4.text-center
-                            a(href="#")
-                                img.shadowfilter(src="../img/Android.png")
-                        div.col-4.text-center
-                            a(href="#")
-                                img.shadowfilter(src="../img/iOS.png")
-        div
-            div.container
-                div.row.group.group-1
-                    div.col-6.text-center
-                        div.image-container
-                            img.g1-txt(src="../img/g1-txt.png")
-                    div.col-6.text-center
-                        div.image-container
-                            img.g1-img(src="../img/g1-img.png")
-                div.row.group.group-2
-                    div.col-6.text-center
-                        div.image-container
-                            img.g2-img(src="../img/g2-img.png")
-                    div.col-6.text-center
-                        div.image-container
-                            img.g2-txt(src="../img/g2-txt.png")
-                div.row.group.group-3
-                    div.col-6.text-center
-                        div.image-container
-                            img.g3-txt(src="../img/g3-txt.png")
-                    div.col-6.text-center
-                        div.image-container
-                            img.g3-img(src="../img/g3-img.png")
-
-        footer
-            div.container
-                div.col-lg-8.offset-lg-2.text-center
-                    p 版权声明：如果来函说明本网站提供内容系本人或法人版权所有。本网站在核实后，有权先行撤除，以保护版权拥有者的权益 邮箱地址：#[a(href="mailto:info@dnvod.tv") info@dnvod.tv] dnvod.tv版权所有。未经授权禁止链接、复制或建立
-                    p Copyright 2008-2017 dnvod.tv All rights Reserved.
+                        a(href="#")
+                            img.shadowfilter(src="../img/windows.png")
+                    div.col-4.text-center
+                        a(href="#")
+                            img.shadowfilter(src="../img/Android.png")
+                    div.col-4.text-center
+                        a(href="#")
+                            img.shadowfilter(src="../img/iOS.png")
+    div.groups
+        div.container
+            div.row.group.group-1
+                div.col-6.text-center
+                    div.image-container
+                        img.g1-txt(src="../img/g1-txt.png")
+                div.col-6.text-center
+                    div.image-container
+                        img.g1-img(src="../img/g1-img.png")
+            div.row.group.group-2
+                div.col-6.text-center
+                    div.image-container
+                        img.g2-img(src="../img/g2-img.png")
+                div.col-6.text-center
+                    div.image-container
+                        img.g2-txt(src="../img/g2-txt.png")
+            div.row.group.group-3
+                div.col-6.text-center
+                    div.image-container
+                        img.g3-txt(src="../img/g3-txt.png")
+                div.col-6.text-center
+                    div.image-container
+                        img.g3-img(src="../img/g3-img.png")

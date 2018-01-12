@@ -1,19 +1,35 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";// Import Zen Grids with this statement.
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
   padding-top: 68px;
-  background-color: #000;
+  background: url("../img/jumbotron.jpg") no-repeat #000;
   color: #fff;
-  font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
+  // font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
+  font-family: Helvetica, Tahoma, Arial, 微软雅黑, "Microsoft YaHei", "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+
   font-size: 14px;
 }
-
+.black-background {
+  background-color: #000;
+}
 a {
+  text-decoration: none !important;
 
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
-a:hover {
-  text-decoration: none !important;
+.mb-300 {
+  margin-bottom: 290px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
 }
 
 .navbar {
@@ -44,10 +60,13 @@ ul.navbar-nav {
 
 }
 
+.content {
+  min-height: 1200px;
+}
+
 .jumb {
-  padding: 15px;
+  padding: 15px 0;
   margin-bottom: 30px;
-  background: url("../img/jumbotron.jpg") no-repeat;
   min-height: 1120px;
 }
 
@@ -74,15 +93,15 @@ ul.navbar-nav {
   width: 100%;
 }
 
-.download {
-  padding: 10px 88px 12px;
-  background-color: rgba(#105373, .75);
+.big-button {
+  padding: 12px 102px 14px;
+  background-color: rgba(#0e4960, .9);
   border: 2px solid rgba(#fff, .75);;
   border-radius: 30px;
   color: #fff !important;
 }
 
-.download:hover {
+.big-button:hover {
   background-color: rgba(#105373, .5);
   border: 2px solid rgba(#fff, .5);
   color: #fff;
@@ -106,6 +125,10 @@ ul.navbar-nav {
   width: 100%;
 }
 
+.groups {
+  background: #000;
+}
+
 .image-container {
   max-width: 100%;
   width: 100%;
@@ -117,6 +140,7 @@ ul.navbar-nav {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
+
 .shadowfilter:hover {
   -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
 }
@@ -171,4 +195,114 @@ ul.navbar-nav {
 footer {
   padding: 15px 0;
   color: #aaa;
+  background-color: #000;
+}
+
+.download-links {
+  padding: 25px 0;
+  background-color: rgba(#46838b, .63);
+}
+
+/**
+ *  recharge
+ */
+
+.product {
+  background-color: rgba(#fff, .1);
+  padding: 25px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  font-size: 28px;
+  width: 180px;
+  display: table;
+  margin: 0 auto;
+
+  &.selected {
+    border-color: rgba(#34c0e3, .9);
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: rgba(#34c0e3, .9);
+  }
+}
+
+.price {
+  font-size: 48px;
+}
+
+.unit-price {
+  margin: 15px 0;
+}
+
+.payment {
+  background-color: rgba(#fff, .1);
+  padding: 8px 25px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 100%;
+
+  img {
+    &.credit-card {
+      height: 33px;
+      margin-right: 8px;
+    }
+    &.wechat-pay {
+      height: 33px;
+      margin-right: 8px;
+    }
+    &.wechat {
+      height: 33px;
+      margin-right: 8px;
+    }
+    &.alipay {
+      height: 33px;
+      margin-right: 8px;
+    }
+  }
+  &.selected {
+    border-color: rgba(#34c0e3, .9);
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: rgba(#34c0e3, .9);
+  }
+}
+
+.words {
+  font-size: 19px;
+
+  h2 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 65px;
+  }
+
+  p {
+    margin-bottom: 65px;
+  }
+}
+
+.background-1 {
+  background-image: url(../img/recharge-background-1.png);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.background-2 {
+  background-image: url(../img/recharge-background-2.png);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.background-3 {
+  background-image: url(../img/recharge-background-3.png);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
