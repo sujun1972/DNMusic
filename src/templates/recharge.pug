@@ -7,45 +7,51 @@ block content
     div.container.mb-300
         div.row.group.group-1
             div.col-12.text-center
-                img(src="../img/recharge-words.png")
-        div.row.mb-5
-            div.col-3.text-center
-                div.product.selected.mb-5.shadowfilter
+                img.recharge-words(src="../img/recharge-words.png")
+        div(style="margin-bottom: 10px;").row.products
+            div.col-6.col-lg-3.text-center
+                div.product.selected.mb-4.mb-lg-5.shadowfilter.meteor-box(onclick="selectProduct(event)")
                     div #[span.price 45] 元
                     div.unit-price 15 / 月
                     div 3个月
-                div.payment.shadowfilter
-                    img.credit-card(src="../img/credit-card.png")
-                    span 信用卡在线付款
-            div.col-3.text-center
-                div.product.mb-5.shadowfilter
+            div.col-6.col-lg-3.text-center
+                div.product.mb-4.mb-lg-5.shadowfilter.meteor-box(onclick="selectProduct(event)")
                     div #[span.price 90] 元
                     div.unit-price 15 / 月
                     div 半年
-                div.payment.shadowfilter
-                    img.wechat-pay(src="../img/wechat-pay.png")
-                    span 微信扫码支付
-            div.col-3.text-center
-                div.product.mb-5.shadowfilter
+            div.col-6.col-lg-3.text-center
+                div.product.mb-4.mb-lg-5.shadowfilter.meteor-box(onclick="selectProduct(event)")
                     div #[span.price 180] 元
                     div.unit-price 15 / 月
                     div 一年
-                div.payment.shadowfilter
-                    img.wechat(src="../img/wechat.png")
-                    span 微信转账/红包
-            div.col-3.text-center
-                div.product.mb-5.shadowfilter
+            div.col-6.col-lg-3.text-center
+                div.product.mb-4.mb-lg-5.shadowfilter.meteor-box(onclick="selectProduct(event)")
                     div #[span.price 15] 元
                     div.unit-price 15 / 月
                     div 一月
-                div.payment.shadowfilter
+
+        div.row.pay-methods.mb-5
+            div.col-lg-3.text-center.mb-3
+                div.payment.shadowfilter.meteor-box.selected(onclick="selectPayMethod(event)")
+                    img.credit-card(src="../img/credit-card.png")
+                    span 信用卡在线付款
+            div.col-lg-3.text-center.mb-3
+                div.payment.shadowfilter.meteor-box(onclick="selectPayMethod(event)")
+                    img.wechat-pay(src="../img/wechat-pay.png")
+                    span 微信扫码支付
+            div.col-lg-3.text-center.mb-3
+                div.payment.shadowfilter.meteor-box(onclick="selectPayMethod(event)")
+                    img.wechat(src="../img/wechat.png")
+                    span 微信转账/红包
+            div.col-lg-3.text-center.mb-3
+                div.payment.shadowfilter.meteor-box(onclick="selectPayMethod(event)")
                     img.wechat(src="../img/alipay.png")
                     span 支付宝转账
-        div.row.mb-5
+        div.row
             div.col-12.text-center
                 a.shadowfilter(href="#").pay.big-button 去付款
 
-    div.background-1.black-background.pt-100.pb-200
+    div.background-1.black-background.pt-100.pb-400
         div.container
             div.row.group.group-1
                 div.col-12.text-center
@@ -59,30 +65,24 @@ block content
                 div.col-4.text-center
                     img(src="../img/super-quantity.png")
 
-    div.background-2.black-background.pt-100.pb-200
+    div.background-2.black-background.pt-100.pb-400
         div.container
             div.row.group.group-1
-                div.col-12.text-center
+                div.col-lg-6.text-center
+                div.col-lg-6.text-center
                     div.words
-                        h2 好音乐，无国界！
-                        p 所有品质皆可下载，满足您各种使用环境！每月200 首付费音乐下载权限，让您在音乐世界畅听无阻。
-                div.col-4.text-center
-                    img(src="../img/standard-quantity.png")
-                div.col-4.text-center
-                    img(src="../img/high-quantity.png")
-                div.col-4.text-center
-                    img(src="../img/super-quantity.png")
+                        h2 VIP专属身份标识
+                        p 追求音乐品质的你，本该与众不同！
 
-    div.background-3.black-background.pt-100.pb-200
+    div.black-background.background-3.pt-100.pb-400
         div.container
             div.row.group.group-1
-                div.col-12.text-center
+                div.col-lg-6.text-center
                     div.words
-                        h2 好音乐，无国界！
-                        p 所有品质皆可下载，满足您各种使用环境！每月200 首付费音乐下载权限，让您在音乐世界畅听无阻。
-                div.col-4.text-center
-                    img(src="../img/standard-quantity.png")
-                div.col-4.text-center
-                    img(src="../img/high-quantity.png")
-                div.col-4.text-center
-                    img(src="../img/super-quantity.png")
+                        h2 云歌单
+                        p 改变的是播放的设备，不变的是对音乐的热忱
+                div.col-6.text-center
+
+
+block scripts
+    script(src='../js/custom.js')

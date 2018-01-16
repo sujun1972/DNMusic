@@ -1,0 +1,84 @@
+
+/**
+ *  recharge
+ */
+
+
+
+.product {
+  width: 180px !important;
+  font-size: 28px;
+}
+
+.price {
+  font-size: 48px;
+}
+
+.unit-price {
+  margin: 15px 0;
+}
+
+.payment {
+  padding: 8px 25px;
+  font-size: 16px;
+  width: 100%;
+
+  img {
+    &.credit-card {
+      height: 33px;
+      margin-right: 8px;
+    }
+    &.wechat-pay {
+      height: 33px;
+      margin-right: 8px;
+    }
+    &.wechat {
+      height: 33px;
+      margin-right: 8px;
+    }
+    &.alipay {
+      height: 33px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.pay-methods {
+  margin-bottom: 100px !important;
+}
+
+.words {
+  font-size: 19px;
+
+  h2 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 65px;
+  }
+
+  p {
+    margin-bottom: 65px;
+  }
+}
+
+.background-1 {
+  background-image: url(../img/recharge-background-1.png);
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.background-2 {
+  background-image: url(../img/recharge-background-2.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-position: center -15px;
+}
+
+.background-3 {
+  background-image: url(../img/recharge-background-3.png);
+  background-size:  1216px 679px;
+  background-repeat:  no-repeat;
+  background-position: right -15px;
+}
+

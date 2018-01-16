@@ -1,0 +1,131 @@
+
+.star {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  top: 25px;
+  left: 1800px;
+  position: relative;
+  transform-origin: 100% 0;
+  animation: star-move 1s infinite ease-out;
+  animation-direction: normal;
+  opacity: 0;
+}
+.star:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  border: 1px solid #f00;
+  border-width: 1px 150px 1px 150px;
+  border-color: transparent transparent transparent #fff;
+  transform: rotate(-45deg) translate3d(1px, -1px, 0);
+  transform-origin: 0% 100%;
+  animation: shooting 0 infinite ease-out;
+  animation-direction: normal;
+}
+
+//.blue {
+//  top: 100px;
+//  left: 450px;
+//  background: #4dabff;
+//  animation-delay: 4.5s;
+//}
+//.blue:after {
+//  border-color: transparent transparent transparent #4dabff;
+//  animation-delay: 4.5s;
+//}
+
+@-webkit-keyframes shooting {
+  50% {
+    transform: scale(1) rotate(-45deg) translate(0px, 0px);
+  }
+  100% {
+    transform: scale(0.5) rotate(-45deg) translate(0px, -1px);
+  }
+}
+
+@-webkit-keyframes star-move {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(0) translate3d(-200px, 200px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
+  }
+}
+
+
+//
+//.star1 {
+//  position: absolute;
+//  top: 80px;
+//  left: 100px;
+//  width: 2px;
+//  height: 2px;
+//  background: blue;
+//  border: 1px solid blue;
+//  border-radius: 50%;
+//  transform-origin: 100% 0;
+//  animation: star-move1 1s infinite ease-out;
+//  opacity: 0;
+//}
+//
+//.star1:after {
+//  content: '';
+//  display: block;
+//  position: absolute;
+//  top: -4px;
+//  left: 3px;
+//  border: 1px solid blue;
+//  border-width: 2px 100px 2px 100px;
+//  border-color: transparent transparent transparent blue;
+//  transform-origin: 0 100%;
+//  transform: scale(1) rotate(-135deg) translate3d(0, 0, 0);
+//  animation: star-shooting1 1s infinite ease-out;
+//}
+//
+//.red {
+//  top: 80px;
+//  left: 100px;
+//  background: red;
+//  animation-delay: 2.5s;
+//}
+//.red:after {
+//  border-color: transparent transparent transparent red;
+//  animation-delay: 2.5s;
+//}
+//
+//@keyframes star-move1 {
+//  0% {
+//    transform: scale(0) rotate(0) translate3d(0, 0, 0);
+//    opacity: 0;
+//  }
+//  50% {
+//    transform: scale(1) rotate(0) translate3d(100px, 100px, 0);
+//    opacity: 1;
+//  }
+//  100% {
+//    transform: scale(1) rotate(0) translate3d(200px, 200px, 0);
+//    opacity: 0;
+//  }
+//}
+//
+//@keyframes star-shooting1 {
+//  0% {
+//    transform: scale(0) rotate(-135deg) translate3d(0, 0, 0);
+//  }
+//  50% {
+//    transform: scale(1) rotate(-135deg) translate3d(0, 0, 0);
+//  }
+//  100% {
+//    transform: scale(0.5) rotate(-135deg) translate3d(0, 0, 0);
+//  }
+//}

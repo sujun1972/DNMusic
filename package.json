@@ -18,10 +18,14 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "connect": "^3.6.5",
+    "express": "^4.16.2",
     "gulp-pug": "^3.3.0",
     "gulp-sourcemaps": "^2.6.3",
+    "jquery": "^3.2.1",
     "pug": "^2.0.0-rc.4",
     "pump": "^2.0.0",
+    "serve-static": "^1.13.1",
     "zen-grids": "^2.0.3"
   }
 }

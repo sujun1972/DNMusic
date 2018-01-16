@@ -4,7 +4,7 @@ const sass = require('gulp-sass');
 const minifyCSS = require('gulp-csso');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
-// const livereload = require('gulp-livereload');
+const livereload = require('gulp-livereload');
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 
@@ -52,5 +52,5 @@ gulp.task('watch', function() {
 
     gulp.watch('src/templates/*.pug', ['html']);
     // livereload.listen();
-    // gulp.watch(['dist/**/*']).on('change', livereload.changed);
+    gulp.watch(['dist/**/*']).on('change', livereload.changed);
 });

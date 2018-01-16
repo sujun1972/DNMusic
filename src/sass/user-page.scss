@@ -1,0 +1,72 @@
+.user-info {
+  // width: 100%;
+  font-size: 18px;
+
+  &.meteor-box {
+    width: 100%;
+  }
+
+  .avatar {
+    width: 80px;
+  }
+}
+
+.meteor-table {
+  background-color: rgba(#fff, .1);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+
+  .table-header {
+    border-bottom: 2px solid #fff;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+
+  .table-content {
+    padding: 25px;
+  }
+
+  .order-num,
+  .pay-method,
+  .subtotal,
+  .status {
+    display: inline-block;
+  }
+
+  .order-num {
+    width: 25%;
+  }
+
+  .pay-method {
+    width: 25%;
+  }
+
+  .subtotal {
+    width: 25%;
+  }
+
+  .status {
+    width: 25%;
+  }
+
+  .rec {
+    padding: 24px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.user-button {
+  padding: 45px 25px;
+  .icon {
+    height: 55px;
+  }
+}
+

@@ -1,4 +1,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./bootsrap-override";
+
+@import "./meteor";
 
 body {
   padding-top: 68px;
@@ -28,18 +31,19 @@ a {
   padding-top: 100px;
 }
 
-.pb-200 {
-  padding-bottom: 200px;
+.pb-400 {
+  padding-bottom: 400px;
 }
 
 .navbar {
-  height: 68px;
+  // height: 68px;
   background-color: rgba(#004667, .9);
   color: #fff;
 }
 
 ul.navbar-nav {
   padding-left: 80px;
+  line-height:34px;
 }
 
 .navbar a.active {
@@ -57,7 +61,9 @@ ul.navbar-nav {
 
 .user-links {
   min-width: 100px;
-
+  // float: right;
+  line-height: 34px;
+  padding-left: 20px;
 }
 
 .content {
@@ -203,17 +209,14 @@ footer {
   background-color: rgba(#46838b, .63);
 }
 
-/**
- *  recharge
- */
 
-.product {
+.meteor-box {
   background-color: rgba(#fff, .1);
   padding: 25px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 15px;
-  font-size: 28px;
-  width: 180px;
+
+  width: 100%;
   display: table;
   margin: 0 auto;
 
@@ -228,81 +231,33 @@ footer {
   }
 }
 
-.price {
-  font-size: 48px;
-}
-
-.unit-price {
-  margin: 15px 0;
-}
-
-.payment {
-  background-color: rgba(#fff, .1);
-  padding: 8px 25px;
-  border: 3px solid #fff;
-  border-radius: 15px;
-  font-size: 16px;
-  width: 100%;
-
-  img {
-    &.credit-card {
-      height: 33px;
-      margin-right: 8px;
-    }
-    &.wechat-pay {
-      height: 33px;
-      margin-right: 8px;
-    }
-    &.wechat {
-      height: 33px;
-      margin-right: 8px;
-    }
-    &.alipay {
-      height: 33px;
-      margin-right: 8px;
-    }
-  }
-  &.selected {
-    border-color: rgba(#34c0e3, .9);
-  }
-
-  &:hover {
-    cursor: pointer;
-    border-color: rgba(#34c0e3, .9);
+.navbar-collapse {
+  .navbar-nav {
+    padding-left: 20px;
   }
 }
 
-.words {
-  font-size: 19px;
-
-  h2 {
-    font-size: 46px;
-    font-weight: 400;
-    margin-bottom: 65px;
-  }
-
-  p {
-    margin-bottom: 65px;
-  }
+.navbar-toggle {
+  padding-top: 11px;
+  display: block;
+}
+button.navbar-toggle:focus {
+  border: none !important;
+  outline: none;
 }
 
-.background-1 {
-  background-image: url(../img/recharge-background-1.png);
-  background-size:     cover;
-  background-repeat:   no-repeat;
-  background-position: center center;
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #888;
+  margin-top: 4px;
 }
 
-.background-2 {
-  background-image: url(../img/recharge-background-2.png);
-  background-size:     cover;
-  background-repeat:   no-repeat;
-  background-position: center center;
-}
-
-.background-3 {
-  background-image: url(../img/recharge-background-3.png);
-  background-size:     cover;
-  background-repeat:   no-repeat;
-  background-position: center center;
-}
+@import "./recharge-page";
+@import "./user-page";
+@import "./download-page";
+@import "./mobile-override";
+@import "./table-override";

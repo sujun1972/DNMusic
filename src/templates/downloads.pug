@@ -9,32 +9,48 @@ block content
     div.content
         div.container
                 div.row.group
-                    div.col-4.text-center
-                        img(src="../img/desktop-words.png")
-                    div.col-4.text-center
-                        img(src="../img/android-words.png")
-                    div.col-4.text-center
-                        img(src="../img/iphone-words.png")
+                    div.col-12.col-lg-4.text-center.mb-5.mb-sm-0
+                        img.download-des-1(src="../img/desktop-words.png")
+                    div.col-12.col-lg-4.text-center.mb-5.mb-sm-0
+                        img.download-des-2(src="../img/android-words.png")
+                    div.col-12.col-lg-4.text-center.mb-5.mb-sm-0
+                        img.download-des-3(src="../img/iphone-words.png")
 
-                div.row.mb-4
-                    div.col-4.text-center
-                        img(src="../img/windows-client.png")
-                    div.col-4.text-center
-                        img(src="../img/android-client.png")
-                    div.col-4.text-center
-                        img(src="../img/ios-client.png")
-
-        div.row.download-links
+        div(style="position: relative").download-zone
+            div.download-link-mask.mask1
+            div.download-link-mask.mask2
+            div.download-link-mask.mask3
             div.container
                 div.row
-                    div.col-4.text-center
-                        a(href="#")
-                            img.shadowfilter(src="../img/download-button.png")
-                    div.col-4.text-center
-                        a.mr-4(href="#")
-                            img.shadowfilter(src="../img/download-button.png")
-                        img(src="../img/android-qrcode.png")
-                    div.col-4.text-center
-                        a.mr-4(href="#")
-                            img.shadowfilter(src="../img/download-button.png")
-                        img(src="../img/ios-qrcode.png")
+                    div.col-lg-4.text-center.mb-5.mb-md-0
+                        img(src="../img/windows-client.png", style="margin-bottom: 70px;")
+                        div
+                            a(href="#")
+                                img.shadowfilter(src="../img/download-button.png")
+                    div.col-lg-4.text-center.mb-5.mb-md-0
+                        img(src="../img/android-client.png", style="margin-bottom: 70px;")
+                        div
+                            a.mr-4(href="#")
+                                img.shadowfilter(src="../img/download-button.png")
+                            img(src="../img/android-qrcode.png")
+                    div.col-lg-4.text-center.mb-5.mb-md-0
+                        img(src="../img/ios-client.png", style="margin-bottom: 70px;")
+                        div
+                            a.mr-4(href="#")
+                                img.shadowfilter(src="../img/download-button.png")
+                            img(src="../img/ios-qrcode.png")
+
+        //div.row.download-links
+        //    div.container
+        //        div.row
+        //            div.col-4.text-center
+        //                a(href="#")
+        //                    img.shadowfilter(src="../img/download-button.png")
+        //            div.col-4.text-center
+        //                a.mr-4(href="#")
+        //                    img.shadowfilter(src="../img/download-button.png")
+        //                img(src="../img/android-qrcode.png")
+        //            div.col-4.text-center
+        //                a.mr-4(href="#")
+        //                    img.shadowfilter(src="../img/download-button.png")
+        //                img(src="../img/ios-qrcode.png")

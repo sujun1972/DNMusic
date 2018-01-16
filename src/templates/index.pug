@@ -5,11 +5,11 @@ extends layout.pug
 block content
     div.jumb
         div.container.poster
-            div.row
-                div.col-8
+            div.row(style="margin-bottom: 50px;")
+                div.col-lg-6.col-xl-8
                     div.slogan
                         img(src="../img/slogan.png")
-                div.col-4.text-center
+                div.col-lg-6.col-xl-4.text-center
                     div.s-logo
                         img(src="../img/shining-logo.png")
                     a.shadowfilter(href="./downloads.html").download.big-button 下载客户端
@@ -17,35 +17,31 @@ block content
             div.row-header
             div.container
                 div.row
-                    div.col-4.text-center
+                    div.col-sm-4.text-center.mb-4.mb-sm-0
                         a(href="#")
                             img.shadowfilter(src="../img/windows.png")
-                    div.col-4.text-center
+                    div.col-sm-4.text-center.mb-4.mb-sm-0
                         a(href="#")
                             img.shadowfilter(src="../img/Android.png")
-                    div.col-4.text-center
+                    div.col-sm-4.text-center.mb-4.mb-sm-0
                         a(href="#")
                             img.shadowfilter(src="../img/iOS.png")
     div.groups
         div.container
             div.row.group.group-1
-                div.col-6.text-center
-                    div.image-container
-                        img.g1-txt(src="../img/g1-txt.png")
-                div.col-6.text-center
-                    div.image-container
-                        img.g1-img(src="../img/g1-img.png")
+                div.col-sm-6.text-center
+                     img.g1-txt.shadowed(src="../img/g1-txt.png")
+                div.col-sm-6.text-center
+                    img.g1-img(src="../img/g1-img.png")
             div.row.group.group-2
-                div.col-6.text-center
-                    div.image-container
-                        img.g2-img(src="../img/g2-img.png")
-                div.col-6.text-center
-                    div.image-container
-                        img.g2-txt(src="../img/g2-txt.png")
+                div.col-sm-6.text-center.push-md-6
+                     img.g2-txt(src="../img/g2-txt.png")
+                div.col-sm-6.text-center.pull-md-6
+                     img.g2-img(src="../img/g2-img.png")
+
             div.row.group.group-3
-                div.col-6.text-center
-                    div.image-container
-                        img.g3-txt(src="../img/g3-txt.png")
-                div.col-6.text-center
-                    div.image-container
-                        img.g3-img(src="../img/g3-img.png")
+                div.col-sm-6.text-center
+                     img.g3-txt(src="../img/g3-txt.png")
+                div.col-sm-6.text-center
+                     img.g3-img(src="../img/g3-img.png")
+
